@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>URL Shortener</title>
+    <meta name="description" content="A simple URL shortener built with Flask"/>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    
+    <form action="{{ url_for('shorten_url') }}" method="post">  
+        <label for="URL">Enter the URL:</label>
+        <input type="url" required placeholder="Enter the URL here to shorten it" name="URL" autofocus />
+        <button type="submit">Shorten URL</button>
+    </form>
+    
+</body>
+</html>
